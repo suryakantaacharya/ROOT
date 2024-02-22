@@ -1,71 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Suryakanta Acharya - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryakanta Acharya</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            font-size: 24px;
             margin: 0;
+            padding: 0;
         }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3 {
+            color: #37bfde;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
         h2 {
-            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        h3 {
             margin-top: 10px;
         }
+
         p {
-            margin: 5px 0;
+            line-height: 1.5;
         }
+
+        .section {
+            margin-bottom: 20px;
+            color: blueviolet;
+        }
+
+        #loadContentButton {
+            padding: 10px 20px;
+            background-color: #37bfde; /* Button background color */
+            color: #fff; /* Button text color */
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+            animation: pulse 2s infinite alternate; /* Apply pulse animation */
+        }
+
+        #loadContentButton:hover {
+            background-color: #2a8aad; /* Change background color on hover */
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
     </style>
 </head>
 <body>
-    <h1>Suryakanta Acharya</h1>
-    <p><em>Systems Associate</em></p>
-    <p><strong>Email:</strong> suryakanta.acharya.088@gmail.com</p>
-    <p><strong>Phone:</strong> +91-7077418313</p>
-    <p><strong>Location:</strong> Bangalore, India</p>
-    <p><strong>Date of Birth:</strong> 03/12/2000</p>
-    <p><strong>Nationality:</strong> Indian</p>
-    <p><strong>Gender:</strong> Male</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/suryakanta-acharya/">Suryakanta Acharya</a></p>
-    
-    <h2>Professional Experience</h2>
-    <p><strong>Systems Associate</strong></p>
-    <p><em>Infosys Limited</em></p>
-    <p><em>Bangalore, India</em></p>
-    <p><em>December 2021 – Present</em></p>
-    <p><strong>Key Responsibilities:</strong></p>
-    <ul>
-        <li>As a Systems Associate at Infosys, I am responsible for managing the server-side of critical applications for a major client.</li>
-        <li>Collaborate with a cross-functional team to ensure seamless operation, security, and performance of applications.</li>
-        <li>Contribute to the development and maintenance of server-side components, focusing on Java and Spring Boot technologies.</li>
-        <li>Utilize strong debugging and problem-solving skills to quickly identify and resolve issues in the codebase.</li>
-        <li>Efficiently manage databases using SQL and database management tools like MySQL, Oracle, and PostgreSQL.</li>
-        <li>Leverage Git for version control to ensure code stability and efficient collaboration with other developers.</li>
-    </ul>
 
-    <h2>Education</h2>
-    <p><strong>Bachelor's Degree in Information Technology and Management</strong></p>
-    <p><em>Ravenshaw University</em></p>
-    <p><em>Cuttack, India</em></p>
-    <p><em>2018 – 2021</em></p>
-    <p><em>CGPA: 7.8</em></p>
+    <button id="loadContentButton" style="position: sticky;">Still making progress on it. Click to see current one </button>
 
-    <h2>Profile</h2>
-    <p>Experienced software developer with a passion for creating innovative software solutions. Seeking a challenging role that allows me to apply my technical skills and knowledge effectively.</p>
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li><strong>Java EE:</strong> Proficient in Java programming with a strong grasp of object-oriented programming concepts.</li>
-        <li><strong>Spring Boot:</strong> Leveraged Spring Boot to develop RESTful web services.</li>
-        <li><strong>Debugging and Problem-Solving:</strong> Skilled in identifying and resolving issues efficiently.</li>
-        <li><strong>IDEs:</strong> Proficient in using Eclipse and IntelliJ IDEA.</li>
-        <li><strong>Database Management:</strong> Experience with SQL and database tools like MySQL, Oracle, and PostgreSQL.</li>
-        <li><strong>Version Control:</strong> Familiar with Git for code management and collaboration.</li>
-        <li><strong>Testing Frameworks:</strong> Experience with JUnit and writing unit tests for code quality assurance.</li>
-    </ul>
+    <div class="container">
+        <header>
+            <h1><i>Suryakanta Acharya</i></h1>
+            <p style="text-align: center;" >suryakanta.acharya.088@gmail.com | +91-7077418313</p>
+
+            <p style="text-align: center;"><a href="https://www.linkedin.com/in/suryakanta-acharya/">LinkedIn</a> | <a href="https://github.com/SuryakantaAcharya">GitHub</a></p>
+
+
+            <p style="text-align: center;">Odisha, India | Indian</p>
+        </header>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <p><strong>Front end:</strong> JavaScript, HTML, CSS, React.js</p>
+            <p><strong>Back end:</strong> Java, Spring framework, Spring boot</p>
+            <p><strong>Database:</strong> Oracle, Postgres, Cassandra, MongoDB</p>
+            <p><strong>Data Pipelines:</strong> AWS (S3, SNS, SQS), Kafka</p>
+            <p><strong>Misc:</strong> Docker, Jenkins, Kubernetes</p>
+            <p><strong>Tools:</strong> Postman, Splunk, Lens desktop, kubectl, Eclipse (MacOS, Linux), Shell, Maven, Gradle</p>
+        </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+            <h3>Infosys Limited</h3>
+            <p><strong>Senior Systems Associate</strong> | December 2021 - Present</p>
+            <p><strong>Client:</strong> Renowned retail consumer electronics company</p>
+            <pre>
+<b>Demand role : J2EE Application Developer</b>
+<u>New physical store financing sales support: (JDK 17 , Spring boot 3.2 , Gradle ,
+PostgreSQL, Cassandra)</u>
+- Implemented backend APIs to support financing for customers buying
+products from the stores physically.
+- Worked for designing and creation of non blocking I/O spring boot web
+applications for API exposures using Webflux and utilised AWS lambda for
+server-less standalone applications.
+- Contributed 300+ solutions and Junit tests to deliver requirements/stories
+per defined acceptance criteria and compliance requirements.
+- Involved in writing complex multi-table join queries in database and
+integration with Hibernates entity classes.
+- Integrated AWS SNS, SQS for publishing messages to internal business teams
+where ever required with service layer using amazon java libraries.
+Collaborated on application deployments on AWS EKS.
+<u>Product lunch support: (Splunk , Lens)</u>
+- Supported product lunch events by creating Splunk dashboards for
+monitoring traffic. Build splunk queries for error notifications .
+<u>Notification automation for Internal usage : (JDK 11, JavaMail API , Maven)</u>
+- Improvised existing system to send automated mails for financial
+transactions made by customers to external business team.
+- Implemented a common Java library which could be leveraged along with
+multiple internal micro-services.
+<u>Cloud platform upgrade: (JDK 17 , Spring framework 5, Maven , Docker , Jenkins , Kubernetes , Oracle SQL)</u>
+- Participated in architecture enhancements.
+- Accomplished upgrading legacy web applications to JDK 17 from 1.8 .
+- Performed Containerisation using Docker for multiple applications.
+- Refactored major service layer codes to adapt new dynamic APIs and added
+implementation to use S3 for file I/O usages.
+- Fabricated internal jenkins provider pipeline to build pipelines for CI/CD onto
+new internal cloud native infra.
+- Ensured quality assurance of deliverables and extensively worked with QA
+team for testing and automation cycles.
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Bachelor's of Science, Information Technology and Management</strong></p>
+            <p>Ravenshaw University, Cuttack, Odisha | 2018 – 2021</p>
+            <p><strong>GPA:</strong> 7.9/10 (Distinction)</p>
+            <p><strong>CBSE 12th Science</strong></p>
+            <p>St. Xavier's High School, Keonjhar, Odisha | 2016 – 2018</p>
+            <p><strong>CBSE 10th High School</strong></p>
+            <p>Jawahar Navodaya Vidyalata, Rahama, Odisha | 2016</p>
+        </div>
+
+        <div class="section">
+            <h2>Hobbies & Pastimes</h2>
+            <p><strong>Java Libraries:</strong> Building amazing java based artifacts at maven central</p>
+            <p><strong>Outdoor games:</strong> Engage in volleyball for leisure: Spiking stress away with every Serve.</p>
+            <p><strong>Fitness Extraordinaire:</strong> Proficient in lifting spirits and weights alike. I proudly proclaim myself as a gym rat extraordinaire.</p>
+        </div>
+
+    </div>
+
+    <script>
+        var loadContentButton = document.getElementById('loadContentButton');
+        var contentContainer = document.querySelector('.container');
+
+        loadContentButton.addEventListener('click', function() {
+            if (contentContainer.style.display === 'none') {
+                contentContainer.style.display = 'block';
+                loadContentButton.textContent = 'Hide Content';
+            } else {
+                contentContainer.style.display = 'none';
+                loadContentButton.textContent = 'Load All Content';
+            }
+        });
+    </script>
+
 </body>
 </html>
